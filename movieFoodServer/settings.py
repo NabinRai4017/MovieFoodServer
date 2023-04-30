@@ -95,7 +95,7 @@ DATABASES = {
     }
 }
 
-REST_AUTH = {'LOGIN_SERIALIZER': 'users.serializers.LoginSerializer'}
+REST_AUTH = {'LOGIN_SERIALIZER': 'users.serializers.LoginSerializer', 'TOKEN_SERIALIZER': 'users.serializers.TokenSerializer',}
 
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 

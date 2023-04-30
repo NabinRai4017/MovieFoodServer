@@ -95,6 +95,12 @@ DATABASES = {
     }
 }
 
+REST_AUTH = {'LOGIN_SERIALIZER': 'users.serializers.LoginSerializer'}
+
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+ACCOUNT_EMAIL_REQUIRED = True
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
